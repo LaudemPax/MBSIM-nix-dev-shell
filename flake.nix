@@ -12,11 +12,15 @@
         };
       in {
         devShells.default = pkgs.mkShell {
-          name = "Example project";
-          packages = with pkgs.rosPackages.humble; [
-            pkgs.colcon
-            ros-core
-            # ...
+	name = "TUM MBSIM";
+	buildInputs = with pkgs.rosPackages.humble; [
+	pkgs.glibcLocales
+	pkgs.colcon
+	ros-core
+	(buildEnv { paths = [
+	 demo-nodes-cpp
+	 demo-nodes-py
+	]; })
           ];
         };
       });
