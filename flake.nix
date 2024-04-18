@@ -16,10 +16,8 @@
 	buildInputs = with pkgs.rosPackages.humble; [
 	pkgs.glibcLocales
 	pkgs.colcon
-	ros-core
 	(buildEnv { paths = [
-	 demo-nodes-cpp
-	 demo-nodes-py
+	   desktop
 	]; })
           ];
         };
