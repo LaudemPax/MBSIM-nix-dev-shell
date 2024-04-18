@@ -16,6 +16,7 @@
 	buildInputs = with pkgs.rosPackages.humble; [
 	pkgs.glibcLocales
 	pkgs.colcon
+	gazebo-ros
 	(buildEnv { paths = [
 	   desktop
 	]; })
