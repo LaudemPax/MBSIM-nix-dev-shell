@@ -23,9 +23,8 @@
                     moveit-ros-planning-interface
                     moveit-servo
                     moveit-ros-visualization
-                    moveit-visual-tools
                     ros2-control
-                    rps2-controllers
+                    ros2-controllers
                     (buildEnv { paths = [
                         desktop
                     ];})
